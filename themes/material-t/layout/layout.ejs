@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_partial/head') %>
+
+<body>
+  <script>NProgress.start();</script>
+  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/_plugin/mathjax') %>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div id='l_pjax' class='l_main'>
+        <%- body %>
+      </div>
+      <aside class='l_side'>
+        <%- partial('_partial/side') %>
+      </aside>
+    </div>
+  </div>
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/_plugin/evanyou') %>
+  <%- partial('_partial/_plugin/aplayer') %>
+  <%- js('js/pjax') %>
+  <script>NProgress.done();</script>
+</body>
+
+</html>

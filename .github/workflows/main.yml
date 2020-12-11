@@ -1,0 +1,37 @@
+name: hexo-blog
+
+on:
+  push:
+    branches: master
+
+jobs:
+  hexo-deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Install dependencies & Generate static files
+      run: |
+        node -v
+        npm i -g hexo-cli
+        npm i
+        hexo clean
+        hexo g
+        gulp
+    - name: Deploy to Github Pages
+      env:
+        GIT_NAME: tt
+        GIT_EMAIL: 96486d9b@gmail.com
+        REPO: github.com/ttcqaq/blog
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      run: |
+        git config --global user.name $GIT_NAME
+        git config --global user.email $GIT_EMAIL
+        sed -i'' "s~https://${REPO}.git~https://${ACCESS_TOKEN}@${REPO}.git~" _config.yml
+        hexo d

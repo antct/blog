@@ -1,0 +1,22 @@
+<article class="post reveal" itemscope itemprop="blogPost">
+	<section class='meta'>
+		<h2 class="title">
+			<a href="<%- url_for(post.path) %>">
+				<%= post.title %>
+			</a>
+		</h2>
+	</section>
+
+	<section class="article typo">
+		<div class="article-entry" itemprop="articleBody">
+			<%- post.content %>
+		</div>
+	</section>
+</article>
+
+<script>
+	window.subData = {
+		title: '<%= post.title %>',
+		tools: true
+	}
+</script>

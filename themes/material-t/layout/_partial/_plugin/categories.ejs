@@ -1,0 +1,11 @@
+<% if (post.categories && post.categories.length) { %>
+<%
+    let categories = [];
+    post.categories.forEach(function(category) {
+        categories.push('<a href="'+url_for(category.path)+'">' + category.name + '</a>');
+    });
+%>
+<div class='categories'>
+    <%- categories.join(', ') %>
+</div>
+<% } %>

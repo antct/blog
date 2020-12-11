@@ -1,0 +1,11 @@
+<% if (theme.poem.enable) { %>
+<section class='m_widget poem'>
+    <div class='header'>诗词</div>
+    <div class='content'>
+        <div class='poem'>
+            <span id="jinrishici-sentence">正在加载今日诗词....</span>
+        </div>
+        <script src="<%= theme.poem.api %>" charset="utf-8"></script>
+    </div>
+</section>
+<% } %>

@@ -1,0 +1,6 @@
+<span id="<%= url_for(post.path) %>" class="post-count" data-flag-title="<%= post.title %>">
+  <time> 字数 <span id='wordcount'></span> 阅读时长 <span id='min2read'></span></time>
+</span>
+<script>
+  initCount('<%= JSON.stringify(strip_html(post.content)) %>');
+</script>

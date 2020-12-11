@@ -1,0 +1,44 @@
+.toc-wrapper {
+    z-index:3;
+    &:extend(.z-depth-2);
+    position: fixed;
+    top: @header-height + @gap * 2;
+    right: 50%;
+    margin-right: -@container-width/2;
+    // prevent toc is too heigh.
+    overflow: auto;
+    max-height: ~"calc(50%)";
+    @media (max-width: @container-width + 2 * @gap) {
+        display: none;
+    }
+
+    width: @side-width;
+
+    padding: @gap;
+    border-left: 3px solid @secondary-color;
+    background: @white;
+
+    a {
+        display: inline-block;
+
+        &:hover, &:active {
+            color: @accent-color;
+        }
+    }
+
+    ol {
+        &.toc-child {
+            padding-left: @gap;
+        }
+
+        li {
+            list-style: none;
+            width: auto;
+            &:extend(.txt-ellipsis);
+        }
+    }
+
+    &:empty {
+        display: none;
+    }
+}

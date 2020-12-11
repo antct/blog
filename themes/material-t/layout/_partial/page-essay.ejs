@@ -1,0 +1,33 @@
+<article class="post reveal" itemscope itemprop="blogPost">
+	<section class='meta'>
+		<h2 class="title">
+			<a id='title' href=""></a>
+		</h2>
+		<time>
+			<span id='author'></span>
+		</time>
+	</section>
+
+	<section class="article typo">
+		<div id='digest' class="article-entry" itemprop="articleBody">
+		</div>
+		<div id='content' class="article-entry" itemprop="articleBody" style="display:none;">
+		</div>
+		<div id='open' class="readmore">
+			<a href="javascript:void(0)" onclick="initEssay();">启</a>
+		</div>
+	</section>
+</article>
+
+<script>
+	$.get('<%= theme.essay.api %>', function (res) {
+		let content = res['data']['content'];
+		let author = res['data']['author'];
+		let title = res['data']['title'];
+		let digest = res['data']['digest'];
+		$('#title').html(title);
+		$('#author').html(author);
+		$('#content').html(content);
+		$('#digest').html(digest + '...');
+	});
+</script>

@@ -1,0 +1,11 @@
+<% if (page.type === 'timeline') { %>
+<%- partial('_partial/page-timeline', {post: page, index: false}) %>
+<% } else if (page.type === 'gallery') { %>
+<%- partial('_partial/page-gallery', {post: page, index: false}) %>
+<% } else if (page.type === 'essay') { %>
+<%- partial('_partial/page-essay', {post: page, index: false}) %>
+<% } else if (page.type === 'about') { %>
+<%- partial('_partial/page-about', {post: page, index: false}) %>
+<% } else { %>
+<%- partial('_partial/page-article', {post: page, index: false}) %>
+<% } %>

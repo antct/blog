@@ -1,0 +1,40 @@
+<article class="post reveal">
+  <section class="meta">
+    <% if (post.title) { %>
+    <h2 class="title">
+      <a href="<%- url_for(post.path) %>">
+        <%= post.title %>
+      </a>
+    </h2>
+    <% } %>
+    <time>
+      <%= date(post.date, 'YYYY-MM-DD') %>
+    </time>
+    <%- partial('_plugin/categories', {post: post}) %>
+    <%- partial('_plugin/top', {post: post, top: top}) %>
+  </section>
+  <section class="article typo">
+    <% if (post.excerpt) { %>
+    <%- strip_html(post.excerpt) %>
+    <% } else { %>
+    <%- truncate(strip_html(post.content), {length: theme.reading.entry_excerpt }) %>
+    <% } %>
+    <div class="readmore">
+      <a href="<%- url_for(post.path) %>">阅读更多</a>
+    </div>
+    <% if (post.thumbnail) { %>
+    <div class='thumbnail'>
+      <img class="thumb lazy" data-original="<%= post.thumbnail %>"></img>
+    </div>
+    <% } %>
+    <% if (post.tags && post.tags.length) { %>
+    <div class="full-width auto-padding tags">
+      <% post.tags.each(function(item) { %>
+      <a href="<%- url_for(item.path) %>">
+        <%=item.name %></a>
+      <% }) %>
+    </div>
+    <% } %>
+  </section>
+
+</article>

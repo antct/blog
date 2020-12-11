@@ -1,0 +1,64 @@
+<header class="l_header">
+	<div class='wrapper compensate-for-scrollbar'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='<%= url_for("/") %>'>
+				<%- config.title %>
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					<% (theme.menu || []).forEach(function(value) { %>
+					<li>
+						<a class='flat-box nav-<%=value.slug%>' href='<%=url_for(value.url)%>'>
+							<%=value.name%>
+						</a>
+					</li>
+					<% }) %>
+				</ul>
+				<div class='underline'></div>
+			</div>
+			<div class="m_search">
+				<form name="searchform" class="form u-search-form">
+					<input type="text" class="input u-search-input" placeholder="搜索关键词" />
+					<i class="material-icons flat-box">search</i>
+				</form>
+			</div>
+			<ul class='switcher h-list'>
+				<li class='s-search'>
+					<a href='javascript:void(0)'><i class="material-icons flat-box">search</i></a>
+				</li>
+				<li class='s-menu'>
+					<a href='javascript:void(0)'><i class="material-icons flat-box">menu</i></a>
+				</li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				<%= config.title %>
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-down'>
+					<a href='javascript:void(0)'><i class="material-icons flat-box">arrow_downward</i></a>
+				</li>
+				<li class='s-comment'>
+					<a href='javascript:void(0)'><i class="material-icons flat-box">comment</i></a>
+				</li>
+				<li class='s-top'>
+					<a href='javascript:void(0)'><i class="material-icons flat-box">arrow_upward</i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		<% (theme.menu || []).forEach(function(value, key) {
+			if (value.url && value.slug && value.name) { %>
+		<a href="<%= url_for(value.url) %>" class="nav-<%= value.slug %> nav">
+			<%= value.name %>
+		</a>
+		<% 	} 
+		}) %>
+	</nav>
+</aside>

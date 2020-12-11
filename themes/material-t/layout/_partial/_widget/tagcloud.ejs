@@ -1,0 +1,14 @@
+<% if (site.tags.length){ %>
+<section class="m_widget tagcloud">
+    <div class="header">标签</div>
+    <div class='content'>
+        <%- tagcloud(site.tags, {
+            min_font: 16, 
+            max_font: 20, 
+            color: true, 
+            start_color: 'gray', 
+            end_color: 'black'
+        }) %>
+    </div>
+</section>
+<% } %>

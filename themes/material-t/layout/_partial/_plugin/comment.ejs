@@ -1,0 +1,36 @@
+<% if (theme.valine.enable) { %>
+<article class="post post-comment reveal" itemscope itemprop="blogPost">
+    <div class="comment"></div>
+    <script>
+        new Valine({
+            el: '.comment',
+            notify: false,
+            verify: false,
+            visitor: true,
+            appId: '<%= theme.valine.appId %>',
+            appKey: '<%= theme.valine.appKey %>',
+            placeholder: '在这里，写下你的评论 ~',
+            path: window.location.pathname
+        });
+    </script>
+</article>
+<% } %>
+
+<% if (theme.gitalk.enable) { %>
+<article class="post post-comment reveal" itemscope itemprop="blogPost">
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+            clientID: '<%= theme.gitalk.clientID %>',
+            clientSecret: '<%= theme.gitalk.clientSecret %>',
+            id: window.location.pathname,
+            repo: '<%= theme.gitalk.repo %>',
+            owner: '<%= theme.gitalk.owner %>',
+            admin: '<%= theme.gitalk.admin %>',
+            distractionFreeMode: false,
+            language: '<%= theme.gitalk.language %>'
+        })
+        gitalk.render('gitalk-container')
+    </script>
+</article>
+<% } %>

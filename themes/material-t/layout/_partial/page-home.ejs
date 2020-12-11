@@ -1,0 +1,29 @@
+<section class="post-list">
+  <% page.posts.each(function(post){ %>
+  <div class='post-wrapper'>
+    <%- partial('post', {post: post, top: top}) %>
+  </div>
+  <% }) %>
+</section>
+
+<% if (page.total > 1) { %>
+<nav id="page-nav">
+  <% if (page.prev !== 0) { %>
+  <a class="prev" rel="prev" href="<%= url_for(page.prev_link) %>">
+    <span class="text">上頁</span>
+  </a>
+  <% } %>
+  <% if (page.next !== 0) { %>
+  <a class="next" rel="next" href="<%= url_for(page.next_link) %>">
+    <span class="text">下頁</span>
+  </a>
+  <% } %>
+</nav>
+<% } %>
+
+<script>
+  window.subData = {
+    title: '清简',
+    tools: true
+  }
+</script>

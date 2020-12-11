@@ -1,0 +1,50 @@
+<article class="post reveal" itemscope itemprop="blogPost">
+	<section id="md-timeline" class="md-container">
+		<% if (site.posts.length) { -%>
+		<% site.posts.sort('date', -1).limit(site.posts.length).each(function(post){ %>
+		<div class="md-timeline-block">
+			<div class="md-timeline-date blue">
+				<div class="md-date">
+					<%= date(post.date, 'MM DD YYYY') %>
+				</div>
+			</div>
+			<div class="md-timeline-content">
+				<div class="md-timeline-title">
+					<a href="<%- url_for(post.path) %>">
+						<%= post.title %>
+					</a>
+				</div>
+				<div class="md-timeline-info">
+					<span class="md-timeline-info-span">#
+						<%- list_categories(post.categories, {
+								show_count: false, 
+								style: 'none'
+							}) %>
+					</span>
+					<span class="md-timeline-info-span">#
+						<%- list_tags(post.tags, {
+								show_count: false,
+								style: 'none'
+							}) %>
+					</span>
+				</div>
+				<p class="md-timeline-excerpt">
+					<% if (post.excerpt) { %>
+					<%- strip_html(post.excerpt) %>
+					<% } else { %>
+					<%- truncate(strip_html(post.content), {length: theme.reading.timeline_excerpt }) %>
+					<% } %>
+				</p>
+			</div>
+		</div>
+		<% }) %>
+		<% } -%>
+	</section>
+</article>
+
+<script>
+	window.subData = {
+		title: '时间轴',
+		tools: true
+	}
+</script>

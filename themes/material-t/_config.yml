@@ -1,0 +1,76 @@
+# google/hexo/algolia/azure/baidu
+search: 
+  service: hexo
+
+aplayer:
+  enable: true
+
+evanyou:
+  enable: true
+  
+poem:
+  enable: true
+  api: https://sdk.jinrishici.com/v2/browser/jinrishici.js
+
+essay:
+  enable: true
+  api: https://interface.meiriyiwen.com/article/random?dev=1
+
+mathjax:
+  enable: false
+  cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+
+menu:
+  - name: Home
+    slug: home
+    url: /
+  - name: Archive
+    slug: archives
+    url: /archives/
+  - name: Timeline
+    slug: timeline
+    url: /timeline/
+  - name: Gallery
+    slug: gallery
+    url: /gallery/
+  - name: About
+    slug: about
+    url: /about/
+
+widgets:
+  - about
+  - poem
+  - essay
+  - categories
+  - tagcloud
+  # - links
+
+# links:
+#   - name: 语雀
+#     url: https://www.yuque.com/tthappy
+
+less:
+  compress: true
+
+valine:
+  enable: false
+  appId: EHv0Sc4O1lihCngThIr48QHz-9Nh9j0Va
+  appKey: Rf7MVw2FTO3FotzE68skF7ca
+
+gitalk:
+  enable: true
+  owner: ttcqaq
+  repo: blog
+  admin: ttcqaq
+  language: zh
+  clientID: a32a115518d823071675
+  clientSecret: 2c3f87c45da8b453eb5f22980f35a2fa2c71aadc
+
+footer:
+  since: 2/16/2018 00:00:00
+  beian: 浙ICP备17021873号
+  
+reading:
+  enable: true
+  entry_excerpt: 200
+  timeline_excerpt: 50

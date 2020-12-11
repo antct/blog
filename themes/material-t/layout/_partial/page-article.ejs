@@ -1,0 +1,68 @@
+<article class="post reveal" itemscope itemprop="blogPost">
+	<section class='meta'>
+		<h2 class="title">
+			<a href="<%- url_for(post.path) %>">
+				<%= post.title %>
+			</a>
+		</h2>
+		<time>
+			<%= date(post.date, 'YYYY-MM-DD') %>
+		</time>
+
+		<%- partial('_plugin/count') %>
+		<%- partial('_plugin/categories', {post: post}) %>
+		<br />
+		<%- partial('_plugin/update', {post: post}) %>
+
+	</section>
+
+	<% if (post.toc) { %>
+	<section class="toc-wrapper">
+		<div class='content'>
+			<%- toc(post.content, {list_number: true}) %>
+		</div>
+	</section>
+	<% } %>
+
+	<section class="article typo">
+		<div class="article-entry" itemprop="articleBody">
+			<%- post.content %>
+		</div>
+		<% if (post.tags && post.tags.length) { %>
+		<div class="article-tags tags">
+			<% post.tags.each(function(item) { %>
+			<a href="<%- url_for(item.path) %>">
+				<%= item.name %></a>
+			<% }) %>
+		</div>
+		<% } %>
+
+		<% if (post.prev || post.next) { %>
+		<div class="art-item-footer">
+			<% if (post.prev) { %>
+			<span class="art-item-left">
+				<a href="<%=url_for(post.prev.path)%>" rel="prev" title="<%=post.prev.title%>">
+					<%= post.prev.title %>
+				</a>
+			</span>
+			<% } %>
+			<% if (post.next) { %>
+			<span class="art-item-right">
+				<a href="<%=url_for(post.next.path) %>" rel="next" title="<%=post.next.title %>">
+					<%= post.next.title  %>
+				</a>
+			</span>
+			<% } %>
+		</div>
+		<% } %>
+	</section>
+</article>
+
+<%- partial('_plugin/comment', {post: post}) %>
+
+<script>
+	window.subData = {
+		title: '<%= post.title %>',
+		tools: true
+	}
+</script>
