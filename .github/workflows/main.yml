@@ -26,12 +26,12 @@ jobs:
         gulp
     - name: Deploy to Github Pages
       env:
-        GIT_NAME: tt
-        GIT_EMAIL: 96486d9b@gmail.com
+        GIT_NAME: ttcqaq
+        GIT_EMAIL: ttcqaq@gmail.com
         REPO: github.com/ttcqaq/blog
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
         git config --global user.name $GIT_NAME
         git config --global user.email $GIT_EMAIL
-        sed -i'' "s~https://${REPO}.git~https://${ACCESS_TOKEN}@${REPO}.git~" _config.yml
+        sed -i'' "s~https://${REPO}.git~https://${GIT_NAME}:${ACCESS_TOKEN}@${REPO}.git~" _config.yml
         hexo d
