@@ -1,6 +1,6 @@
 # blog
 
-![](https://travis-ci.org/ttcqaq/blog.svg?branch=master) ![](https://img.shields.io/github/stars/ttcqaq/blog.svg) ![](https://img.shields.io/github/forks/ttcqaq/blog.svg) ![](https://img.shields.io/github/issues/ttcqaq/blog.svg) 
+![](https://travis-ci.org/antct/blog.svg?branch=master) ![](https://img.shields.io/github/stars/antct/blog.svg) ![](https://img.shields.io/github/forks/antct/blog.svg) ![](https://img.shields.io/github/issues/antct/blog.svg) 
 
 ## Theme
 

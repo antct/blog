@@ -18,7 +18,7 @@ motto: "睁着一只眼睛，关注人生。\n闭着一只眼睛，放进梦意�
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://ttcqaq.github.io/blog
+url: https://antct.github.io/blog
 root: /blog/
 # permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink/
@@ -85,7 +85,7 @@ theme: material-t
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/ttcqaq/blog.git
+  repo: https://github.com/antct/blog.git
   branch: gh-pages
 
 # Search

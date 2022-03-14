@@ -59,9 +59,9 @@ valine:
 
 gitalk:
   enable: true
-  owner: ttcqaq
+  owner: antct
   repo: blog
-  admin: ttcqaq
+  admin: antct
   language: zh
   clientID: a32a115518d823071675
   clientSecret: 2c3f87c45da8b453eb5f22980f35a2fa2c71aadc

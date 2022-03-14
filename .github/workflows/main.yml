@@ -26,9 +26,9 @@ jobs:
         gulp
     - name: Deploy to Github Pages
       env:
-        GIT_NAME: ttcqaq
-        GIT_EMAIL: ttcqaq@gmail.com
-        REPO: github.com/ttcqaq/blog
+        GIT_NAME: antct
+        GIT_EMAIL: 527892245@qq.com
+        REPO: github.com/antct/blog
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
         git config --global user.name $GIT_NAME

@@ -34,7 +34,7 @@ type: about
 
 这是我的一些联系方式，
 
-- [GitHub](https://github.com/ttcqaq)，**开源了这个博客的所有代码**
+- [GitHub](https://github.com/antct)，**开源了这个博客的所有代码**
 - [FaceBook](https://www.facebook.com/profile.php?id=100032502468035)
 - [Wechat](/blog/assets/wechat.jpg)
 - [RSS](/blog/atom.xml)

@@ -10,8 +10,8 @@ install:
 
 before_script:
   - git config user.name "tt"
-  - git config user.email "96486d9b@gmail.com"
-  - sed -i'' "s~https://github.com/ttcqaq/blog.git~https://${GITHUB_TOKEN}@github.com/ttcqaq/blog.git~" _config.yml
+  - git config user.email "527892245@qq.com"
+  - sed -i'' "s~https://github.com/antct/blog.git~https://${GITHUB_TOKEN}@github.com/antct/blog.git~" _config.yml
 
 script: 
   - hexo g
