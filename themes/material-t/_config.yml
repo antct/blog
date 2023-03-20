@@ -40,7 +40,7 @@ menu:
 widgets:
   - about
   - poem
-  - essay
+  # - essay
   - categories
   - tagcloud
   # - links
