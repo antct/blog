@@ -24,19 +24,19 @@ jobs:
         hexo clean
         hexo g
         gulp
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.ACCESS_TOKEN }}
-        publish_dir: ./public
-    # - name: Deploy to Github Pages
-    #   env:
-    #     GIT_NAME: antct
-    #     GIT_EMAIL: 527892245@qq.com
-    #     REPO: github.com/antct/blog
-    #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-    #   run: |
-    #     git config --global user.name $GI
-    #     git config --global user.email $GIT_EMAIL
-    #     sed -i'' "s~https://${REPO}.git~https://${GIT_NAME}:${ACCESS_TOKEN}@${REPO}.git~" _config.yml
-    #     hexo d
+    # - name: Deploy
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     github_token: ${{ secrets.ACCESS_TOKEN }}
+    #     publish_dir: ./public
+    - name: Deploy to Github Pages
+      env:
+        GIT_NAME: antct
+        GIT_EMAIL: 527892245@qq.com
+        REPO: github.com/antct/blog
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      run: |
+        git config --global user.name $GI
+        git config --global user.email $GIT_EMAIL
+        sed -i'' "s~https://${REPO}.git~https://${GIT_NAME}:${ACCESS_TOKEN}@${REPO}.git~" _config.yml
+        hexo d
