@@ -36,7 +36,7 @@ jobs:
         REPO: github.com/antct/blog
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
-        git config --global user.name $GI
+        git config --global user.name $GIT_NAME
         git config --global user.email $GIT_EMAIL
         sed -i'' "s~https://${REPO}.git~https://${GIT_NAME}:${ACCESS_TOKEN}@${REPO}.git~" _config.yml
         hexo d
