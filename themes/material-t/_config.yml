@@ -51,6 +51,11 @@ widgets:
 
 less:
   compress: true
+  options:
+    # fix breaking changes in less 4.0+
+    # https://github.com/less/less.js/releases/tag/v4.0.0
+    math: always
+  
 
 valine:
   enable: false
