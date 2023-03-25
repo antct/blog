@@ -68,8 +68,8 @@ gitalk:
   repo: blog
   admin: antct
   language: zh
-  clientID: a32a115518d823071675
-  clientSecret: 2c3f87c45da8b453eb5f22980f35a2fa2c71aadc
+  clientID: f1cfc87bb2440fa99fd6
+  clientSecret: 0776c8e25fb56512ca97b038d7de075163aad978
 
 footer:
   since: 2/16/2018 00:00:00
