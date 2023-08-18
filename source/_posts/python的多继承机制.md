@@ -3,7 +3,7 @@ title: python的多继承机制
 tags:
   - python
 categories:
-  - 技·路
+  - 技术
 abbrlink: 51808
 date: 2019-08-06 00:00:00
 ---

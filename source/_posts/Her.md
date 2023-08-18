@@ -5,7 +5,7 @@ tags:
   - 台词
   - 生活
 categories:
-  - 记·路
+  - 生活
 abbrlink: 25387
 date: 2019-04-08 00:00:00
 ---
