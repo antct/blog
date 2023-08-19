@@ -16,6 +16,9 @@ essay:
   enable: true
   api: https://interface.meiriyiwen.com/article/random?dev=1
 
+earth:
+  enable: true
+
 mathjax:
   enable: false
   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
@@ -41,8 +44,9 @@ widgets:
   - about
   # - poem
   # - essay
-  - categories
   - tagcloud
+  - categories
+  - earth
   # - links
 
 # links:
