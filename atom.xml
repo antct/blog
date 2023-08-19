@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Flow</title>
+  
+  <subtitle>清简</subtitle>
+  <link href="https://antct.github.io/blog/atom.xml" rel="self"/>
+  
+  <link href="https://antct.github.io/blog/"/>
+  <updated>2023-08-19T08:28:24.236Z</updated>
+  <id>https://antct.github.io/blog/</id>
+  
+  <author>
+    <name>TT</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python的多继承机制</title>
+    <link href="https://antct.github.io/blog/posts/51808/"/>
+    <id>https://antct.github.io/blog/posts/51808/</id>
+    <published>2019-08-05T16:00:00.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一些时候可能涉及到多继承模式，这里做一个梳理。一般的逻辑是这样的。一个简单的多继承形式。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/assets/image/4.png&quot; alt=&quot;4.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;如果我们有一个方法F，A和B中都有这个方法，当我们在类C中</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://antct.github.io/blog/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="python" scheme="https://antct.github.io/blog/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深浅拷贝</title>
+    <link href="https://antct.github.io/blog/posts/17870/"/>
+    <id>https://antct.github.io/blog/posts/17870/</id>
+    <published>2019-08-05T16:00:00.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;list.copy(): return a shallow copy of the list&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最开始的时候，我想到了这样一个实例&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://antct.github.io/blog/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="python" scheme="https://antct.github.io/blog/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Her</title>
+    <link href="https://antct.github.io/blog/posts/25387/"/>
+    <id>https://antct.github.io/blog/posts/25387/</id>
+    <published>2019-04-07T16:00:00.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Will you always come home to me and tell me about your day?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;你每次回家来  都会跟我聊聊你的一天发生什么了吗？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Tell me about the gu</summary>
+      
+    
+    
+    
+    <category term="生活" scheme="https://antct.github.io/blog/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="电影" scheme="https://antct.github.io/blog/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+    <category term="台词" scheme="https://antct.github.io/blog/tags/%E5%8F%B0%E8%AF%8D/"/>
+    
+    <category term="生活" scheme="https://antct.github.io/blog/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>托斯卡纳艳阳下</title>
+    <link href="https://antct.github.io/blog/posts/43107/"/>
+    <id>https://antct.github.io/blog/posts/43107/</id>
+    <published>2019-02-01T05:32:01.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;毋庸置疑，好的事情总会到来。&lt;/p&gt;
+&lt;p&gt;而它来得晚时，也不失为一种惊喜。&lt;/p&gt;
+&lt;p&gt;没有太被眷顾，反而学会了谦虚努力，&lt;/p&gt;
+&lt;p&gt;更加珍惜所拥有的一切。&lt;/p&gt;
+&lt;p&gt;在 To be a better me 的路上，&lt;/p&gt;
+&lt;p&gt;读书、旅行、锻炼身体、&lt;/p&gt;</summary>
+      
+    
+    
+    
+    <category term="偶得" scheme="https://antct.github.io/blog/categories/%E5%81%B6%E5%BE%97/"/>
+    
+    
+    <category term="生活" scheme="https://antct.github.io/blog/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="摘录" scheme="https://antct.github.io/blog/tags/%E6%91%98%E5%BD%95/"/>
+    
+    <category term="感谢" scheme="https://antct.github.io/blog/tags/%E6%84%9F%E8%B0%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客架构</title>
+    <link href="https://antct.github.io/blog/posts/3540/"/>
+    <id>https://antct.github.io/blog/posts/3540/</id>
+    <published>2018-12-31T16:00:00.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;框架：&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;Hexo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;主题：&lt;a href=&quot;https://github.com/antct/blog&quot;&gt;Theme&lt;/a&gt; Fork From &lt;a href=&quot;https://</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://antct.github.io/blog/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="架构" scheme="https://antct.github.io/blog/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+    <category term="博客" scheme="https://antct.github.io/blog/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="更新" scheme="https://antct.github.io/blog/tags/%E6%9B%B4%E6%96%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>霍乱时期的爱情</title>
+    <link href="https://antct.github.io/blog/posts/11982/"/>
+    <id>https://antct.github.io/blog/posts/11982/</id>
+    <published>2018-04-27T01:36:01.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;多年以后，当他试图回忆起那个被诗歌的魔力理想化了的姑娘原本的模样时，却发现自己无法把她从昔日那些支离破碎的黄昏中分离出来。即便是在急切的等待着她的第一封回信的那些日子里，在他悄悄地望着她却不让她发现的那些日子里，他看到的也只是午后两点的阳光下和纷纷扬扬的杏花中她隐约的轮廓。</summary>
+      
+    
+    
+    
+    <category term="生活" scheme="https://antct.github.io/blog/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="读书" scheme="https://antct.github.io/blog/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+    <category term="杂记" scheme="https://antct.github.io/blog/tags/%E6%9D%82%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安全带</title>
+    <link href="https://antct.github.io/blog/posts/44669/"/>
+    <id>https://antct.github.io/blog/posts/44669/</id>
+    <published>2018-03-10T11:36:01.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;每次去电影院，当身陷柔软的沙发座椅，男人总有一种系上安全带的冲动。    &lt;/p&gt;
+&lt;p&gt;男人去电影院越来越少，但他已太久没有和女人看过电影，去影院多是和4岁的儿子一起。随着年岁增长，男人越发不习惯中间的座位，每每售票员说只剩最后几排靠边座位时，他反倒欣然；坐定后，他习惯性</summary>
+      
+    
+    
+    
+    <category term="偶得" scheme="https://antct.github.io/blog/categories/%E5%81%B6%E5%BE%97/"/>
+    
+    
+    <category term="三联生活周刊" scheme="https://antct.github.io/blog/tags/%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>吾国与吾民</title>
+    <link href="https://antct.github.io/blog/posts/6373/"/>
+    <id>https://antct.github.io/blog/posts/6373/</id>
+    <published>2018-02-04T16:00:00.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;想用英文写一本书，针对西方的误解与偏见，写出中国文化的精髓和中国的灵魂。&lt;br&gt;以中国通自居的西方人，大多是些皮毛之见，男人的辫子和女人的小脚，不是真正的中国。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二姐捱到22岁，没</summary>
+      
+    
+    
+    
+    <category term="生活" scheme="https://antct.github.io/blog/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="大师" scheme="https://antct.github.io/blog/tags/%E5%A4%A7%E5%B8%88/"/>
+    
+    <category term="民国" scheme="https://antct.github.io/blog/tags/%E6%B0%91%E5%9B%BD/"/>
+    
+    <category term="林语堂" scheme="https://antct.github.io/blog/tags/%E6%9E%97%E8%AF%AD%E5%A0%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>石夫人下</title>
+    <link href="https://antct.github.io/blog/posts/39219/"/>
+    <id>https://antct.github.io/blog/posts/39219/</id>
+    <published>2017-02-04T11:36:01.000Z</published>
+    <updated>2023-08-19T08:28:24.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;那时我们有梦，关于文学，关于爱情，关于穿越世界的旅行。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/assets/image/1.jpeg&quot; alt=&quot;1.jpg&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="一隅" scheme="https://antct.github.io/blog/categories/%E4%B8%80%E9%9A%85/"/>
+    
+    
+    <category term="回忆" scheme="https://antct.github.io/blog/tags/%E5%9B%9E%E5%BF%86/"/>
+    
+  </entry>
+  
+</feed>
